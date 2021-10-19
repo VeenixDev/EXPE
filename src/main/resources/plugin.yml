@@ -1,0 +1,8 @@
+name: MmoEngine
+version: '${project.version}'
+main: de.veenix.mmoengine.MmoEngine
+api-version: 1.17
+prefix: MMOE
+authors: [ VeenixDev ]
+description: A MMO Engine made to create efficient MMO Adventures with ease
+website: mmo.veenix.de
