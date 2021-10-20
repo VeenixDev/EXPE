@@ -6,9 +6,9 @@ The whole engine is written **WITHOUT ANY** other dependencies, **BUT** you can 
 Most heavy lifting, like database connection or File Management, is already done by the engine while not limiting you in your creative process of creating an MMO.  
 The "MMO Engine" is providing many features, each feature has its own section down below.
 
-Please remember that the project still is in a very early stage of its lifecycle, this means not every functionality is implemented by this time but you can already read what is planed to be implemented by the first release of this project. Because of this there are very few examples.
+Please remember that the project still is in a very early stage of its lifecycle, this means not every functionality is implemented by this time, but you can already read what is planed to be implemented by the first release of this project. Because of this there are very few examples.
 
-The development of this project started in october 2021 and the team is very small, to be exact i work alone on this project. So please understand if your idea is not implemented in the next update, I will try to implement most ideas that would fit and improve the engine.
+The development of this project started in october 2021 and the team is very small, to be exact I work alone on this project. So please understand if your idea is not implemented in the next update, I will try to implement most ideas that would fit and improve the engine.
 
 - [MMO Engine](#mmo-engine)
   - [File Management](#file-management)
@@ -67,6 +67,7 @@ The engine supports many databases to support your environment and infrastructur
 | -------------- | ------- | --------------------------------- |
 | SQL            | MariaDB | Please test before productive use |
 | Document Based | MongoDB | JSON Files                        |
+| InMemory       | Redis   | Stores data inside the memory     |
 
 ## Caching
 
@@ -102,7 +103,7 @@ The strategy 'None' is pretty simple as well, long story short, it will cache no
 
 The strategy 'Database' only caches data coming from the database.
 
-Because most times config files aren't dynamic there is the possibility to only save database entries.
+Because most times' config files aren't dynamic there is the possibility to only save database entries.
 
 **Advantages**:
 - Only saves dynamic data

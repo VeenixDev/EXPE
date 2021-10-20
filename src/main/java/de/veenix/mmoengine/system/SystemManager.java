@@ -9,21 +9,14 @@ public class SystemManager {
     @Getter
     private static final SystemManager instance = new SystemManager();
 
-    private final HashMap<String, ISystem> systems = new HashMap<>();
+    @Getter
+    private final HashMap<String, SystemData> systems = new HashMap<>();
 
-    public boolean addSystem(String systemId, ISystem system) {
+    public boolean addSystem(String systemId, SystemData sysData) {
         if(this.systems.containsKey(systemId)) {
             return false;
         }
-        this.systems.put(systemId, system);
+        this.systems.put(systemId, sysData);
         return true;
-    }
-
-    public void removeSystem(String systemId) {
-        this.systems.remove(systemId);
-    }
-
-    public ISystem getSystem(String systemId) {
-        return this.systems.get(systemId);
     }
 }
