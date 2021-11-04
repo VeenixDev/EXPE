@@ -5,7 +5,9 @@ In this file it's listed what needs to be done next and to make it more easy to 
 - [ ] Support for more databases
   - [ ] SQL
   - [ ] MongoDB
-  - [ ] ReDis
-  - [ ] PosGres
+  - [ ] Redis
+  - [ ] SQLite
+  - [ ] PostgreSQL
 - [ ] Query Language
+- [ ] Replace System interface with annotations
 - [ ] Example Systems
