@@ -14,7 +14,7 @@ import java.util.List;
 public class PlayerData {
 
     @Getter
-    private final String configPath = MmoEngine.getInstance().getDataFolder().getAbsolutePath() + "/playerData";
+    private static final String configPath = MmoEngine.getInstance().getDataFolder().getAbsolutePath() + "/playerData";
     @Getter
     private final String configName;
 
@@ -24,7 +24,7 @@ public class PlayerData {
     public PlayerData(Player player) {
         this.configName = "player_" + player.getUniqueId();
 
-        if(!ConfigManager.getInstance().addConfig(this.configName, this.configPath)) {
+        if(!ConfigManager.getInstance().addConfig(this.configName, configPath)) {
             Bukkit.getConsoleSender().sendMessage("Couldn't create config file for player: " + player.getName());
         }
 
@@ -41,7 +41,7 @@ public class PlayerData {
             }
         });
 
-        if(!ConfigManager.getInstance().saveConfig(this.configName, this.configPath)) {
+        if(!ConfigManager.getInstance().saveConfig(this.configName, configPath)) {
             Bukkit.getConsoleSender().sendMessage("Couldn't save config file for player: " + player.getName());
         }
     }
