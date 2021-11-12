@@ -10,7 +10,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class LevelSystem extends JavaPlugin implements System, Listener {
 
-    @SystemHandler(systemId = "example_levelSys", event = PlayerLevelChangeEvent.class)
+    @SystemHandler(systemId = "example_levelSys")
     public void onLevelChange(PlayerLevelChangeEvent event) {
         Player player = event.getPlayer();
 

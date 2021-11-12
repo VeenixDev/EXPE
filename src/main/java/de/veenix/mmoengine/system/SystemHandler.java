@@ -1,7 +1,5 @@
 package de.veenix.mmoengine.system;
 
-import org.bukkit.event.Event;
-
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -17,7 +15,5 @@ public @interface SystemHandler {
      * @return The ID of the system
      */
     String systemId();
-
-    Class<? extends Event> event();
 
 }
