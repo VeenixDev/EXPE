@@ -9,5 +9,5 @@ In this file it's listed what needs to be done next and to make it more easy to 
   - [ ] SQLite
   - [ ] PostgreSQL
 - [ ] Query Language
-- [ ] Replace System interface with annotations
+- [x] Replace System interface with annotations
 - [ ] Example Systems
