@@ -28,19 +28,6 @@ public class PlayerData {
             Bukkit.getConsoleSender().sendMessage("Couldn't create config file for player: " + player.getName());
         }
 
-        SystemManager.getInstance().getSystems().forEach((k, v) -> {
-            for(String key : v.getData().keySet()) {
-                String path = "system." + k + "." + key;
-                try {
-                    if(!ConfigManager.getInstance().set(this.configName, path, v.getData().get(key))) {
-                        Bukkit.getConsoleSender().sendMessage("Couldn't set system data for player '" + player.getName() + "' at: " + path);
-                    }
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-
         if(!ConfigManager.getInstance().saveConfig(this.configName, configPath)) {
             Bukkit.getConsoleSender().sendMessage("Couldn't save config file for player: " + player.getName());
         }
