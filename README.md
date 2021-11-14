@@ -1,16 +1,16 @@
-# MMO Engine
+# EXPE
 
-The "MMO Engine" is a plugin for Minecraft Spigot to create immersive MMO Adventures for your users with ease.  
+EXPE is a plugin for Minecraft Spigot to create immersive MMO Adventures for your users with ease.  
 The whole engine is written **WITHOUT ANY** other dependencies, **BUT** you can connect the engine with other plugins to get more possibilities.
 
 Most heavy lifting, like database connection or File Management, is already done by the engine while not limiting you in your creative process of creating an MMO.  
-The "MMO Engine" is providing many features, each feature has its own section down below.
+EXPE is providing many features, each feature has its own section down below.
 
 Please remember that the project still is in a very early stage of its lifecycle, this means not every functionality is implemented by this time, but you can already read what is planed to be implemented by the first release of this project. Because of this there are very few examples.
 
 The development of this project started in october 2021 and the team is very small, to be exact I work alone on this project. So please understand if your idea is not implemented in the next update, I will try to implement most ideas that would fit and improve the engine.
 
-- [MMO Engine](#mmo-engine)
+- [EXPE](#expe)
   - [File Management](#file-management)
   - [Database](#database)
     - [Supported Databases](#supported-databases)
