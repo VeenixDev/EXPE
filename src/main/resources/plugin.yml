@@ -1,4 +1,4 @@
-name: MmoEngine
+name: EXPE
 version: '${project.version}'
 main: de.veenix.mmoengine.MmoEngine
 api-version: 1.17
